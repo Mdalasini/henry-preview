@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-mobile: 39rem;
+    --breakpoint-tablet: 64rem;
+    --breakpoint-desktop: 81rem;
+}
