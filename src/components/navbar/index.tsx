@@ -25,7 +25,7 @@ export function Navbar() {
     <>
       {/* Desktop Navbar */}
       <nav className="fixed top-0 w-full bg-inherit z-40">
-        <div className="max-w-7xl mx-auto px-4 tablet:px-5 desktop:px-8">
+        <div className="container mx-auto px-4 tablet:px-5 desktop:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="shrink-0">
@@ -64,7 +64,7 @@ export function Navbar() {
       {/* Mobile Full-Screen Menu */}
       {isOpen && (
         <div className="fixed inset-0 z-30 tablet:hidden pt-20">
-          <div className="flex flex-col gap-6 max-w-7xl px-4 py-4">
+          <div className="container mx-auto flex flex-col gap-6 px-4 py-4">
             {navItems.map((item) => (
               <Link
                 key={item.label}
