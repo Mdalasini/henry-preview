@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 const navItems = [
   { href: "/about", label: "About Us" },
@@ -28,7 +29,7 @@ export function Navbar() {
         <div className="container mx-auto px-4 tablet:px-5 desktop:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="shrink-0">
+            <div className="shrink-0 mr-20">
               <Link href="/" className="text-2xl font-bold">
                 Logo
               </Link>
@@ -36,12 +37,17 @@ export function Navbar() {
 
             {/* Desktop Menu */}
 
-            <div className="hidden tablet:flex gap-8">
-              {navItems.map((item) => (
-                <Link key={item.label} href={item.href} className="">
-                  {item.label}
-                </Link>
-              ))}
+            <div className="hidden tablet:flex justify-between items-center grow">
+              <div className="hidden tablet:flex gap-8">
+                {navItems.map((item) => (
+                  <Link key={item.label} href={item.href} className="">
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+              <Button size="default" variant="outline" aria-label="Join Us">
+                JOIN US
+              </Button>
             </div>
 
             {/* Mobile Menu Button */}
