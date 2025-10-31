@@ -51,18 +51,15 @@ export function Navbar() {
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              type="button"
+            <Button
+              size="icon"
+              variant="ghost"
               aria-label="Toggle Menu"
               onClick={toggleMenu}
-              className="tablet:hidden cursor-pointer"
+              className="tablet:hidden"
             >
-              {isOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
+              {isOpen ? <X className="size-7" /> : <Menu className="size-7" />}
+            </Button>
           </div>
         </div>
       </nav>
