@@ -105,7 +105,7 @@ const stats = [
 const Page = () => {
   return (
     <div className="bg-white text-gray-800">
-      <main className="container mx-auto px-4 py-16">
+      <main className="max-w-7xl mx-auto px-4 py-16">
         {/* What We Do Section */}
         <section className="text-center mb-24">
           <h2 className="text-3xl font-bold mb-4">What We Do</h2>
