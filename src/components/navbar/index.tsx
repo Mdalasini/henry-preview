@@ -40,7 +40,7 @@ export function Navbar() {
             <div className="hidden tablet:flex justify-between items-center grow">
               <div className="hidden tablet:flex gap-8">
                 {navItems.map((item) => (
-                  <Link key={item.label} href={item.href} className="">
+                  <Link key={item.label} href={item.href} className="text-sm">
                     {item.label}
                   </Link>
                 ))}
@@ -64,20 +64,29 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Full-Screen Menu */}
+      {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="fixed inset-0 z-30 tablet:hidden pt-20">
-          <div className="container mx-auto flex flex-col gap-6 px-4 py-4">
+        <div className="fixed top-16 left-0 w-full bg-background shadow-lg z-30 tablet:hidden border-b">
+          <hr></hr>
+          <div className="mx-auto flex flex-col gap-6 px-8 py-4">
             {navItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-2xl font-semibold relative"
+                className="text-lg font-semibold"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
+            <Button
+              size="default"
+              variant="outline"
+              aria-label="Join Us"
+              className="w-full"
+            >
+              JOIN US
+            </Button>
           </div>
         </div>
       )}
