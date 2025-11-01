@@ -26,10 +26,10 @@ export function Navbar() {
     <>
       {/* Desktop Navbar */}
       <nav className="fixed top-0 w-full bg-inherit z-40">
-        <div className="container mx-auto px-4 tablet:px-5 desktop:px-8">
-          <div className="flex justify-between items-center h-16">
+        <div className="mx-auto px-8 tablet:container tablet:px-4">
+          <div className="flex flex-wrap justify-between items-center h-16">
             {/* Logo */}
-            <div className="shrink-0 mr-20">
+            <div className="shrink-0 tablet:mr-20">
               <Link href="/" className="text-2xl font-bold">
                 Logo
               </Link>

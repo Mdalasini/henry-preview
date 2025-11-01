@@ -1,19 +1,21 @@
+"use client";
+
+import Autoplay from "embla-carousel-autoplay";
 import {
-  Landmark,
   ArrowRightLeft,
-  Tractor,
-  Globe,
   Briefcase,
-  Users,
+  Globe,
+  Landmark,
+  Tractor,
   TrendingUp,
+  Users,
 } from "lucide-react";
+import { useRef } from "react";
 import { Testimonial } from "@/components/testimonial";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 const pillars = [
@@ -75,21 +77,25 @@ const testimonials = [
 
 const stats = [
   {
+    id: 1,
     icon: <Globe className="w-8 h-8 text-gray-900" />,
     value: "44",
     label: "African Countries",
   },
   {
+    id: 2,
     icon: <Briefcase className="w-8 h-8 text-gray-900" />,
     value: "2,500",
     label: "Registered Businesses",
   },
   {
+    id: 3,
     icon: <Users className="w-8 h-8 text-gray-900" />,
     value: "500K+",
     label: "Women & Youth Impacted",
   },
   {
+    id: 4,
     icon: <TrendingUp className="w-8 h-8 text-gray-900" />,
     value: "15M",
     label: "Our Target",
@@ -136,6 +142,7 @@ const Page = () => {
               align: "start",
               loop: true,
             }}
+            plugins={[useRef(Autoplay({ delay: 3000 })).current]}
             className="w-full max-w-4xl mx-auto"
           >
             <CarouselContent>
@@ -147,17 +154,15 @@ const Page = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
         </section>
 
         {/* Stats Section */}
         <section>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div
-                key={index}
+                key={stat.id}
                 className="flex items-center justify-center flex-col sm:flex-row"
               >
                 <div className="mr-4">{stat.icon}</div>
