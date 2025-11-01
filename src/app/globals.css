@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-    --breakpoint-mobile: 39rem;
+    --breakpoint-mobile: 39.5rem;
     --breakpoint-tablet: 64rem;
     --breakpoint-desktop: 81rem;
 

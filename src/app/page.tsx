@@ -105,11 +105,13 @@ const stats = [
 const Page = () => {
   return (
     <div className="bg-white text-gray-800">
-      <main className="max-w-7xl mx-auto px-4 py-16">
+      <main className="max-w-7xl mx-auto px-12 tablet:px-8 py-16">
         {/* What We Do Section */}
-        <section className="text-center mb-24">
-          <h2 className="text-3xl font-bold mb-4">What We Do</h2>
-          <p className="max-w-3xl mx-auto text-lg text-gray-600">
+        <section className="mb-24">
+          <h2 className="text-3xl font-bold mb-4 mobile:text-center">
+            What We Do
+          </h2>
+          <p className="max-w-3xl mx-auto text-lg text-gray-600 mobile:text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -119,16 +121,22 @@ const Page = () => {
 
         {/* Our Pillars Section */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Pillars</h2>
+          <h2 className="text-3xl font-bold mb-12 mobile:text-center">
+            Our Pillars
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {pillars.map((pillar) => (
               <div
                 key={pillar.id}
-                className="text-center p-6 border border-gray-200 rounded-lg"
+                className="p-6 border border-gray-200 rounded-lg"
               >
                 <div className="flex justify-center mb-4">{pillar.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{pillar.title}</h3>
-                <p className="text-gray-600">{pillar.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-center">
+                  {pillar.title}
+                </h3>
+                <p className="text-gray-600 mobile:text-center">
+                  {pillar.description}
+                </p>
               </div>
             ))}
           </div>
@@ -136,7 +144,9 @@ const Page = () => {
 
         {/* Testimonials Section */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-center mb-12">Testimonials</h2>
+          <h2 className="text-3xl font-bold mb-12 mobile:text-center">
+            Testimonials
+          </h2>
           <Carousel
             opts={{
               align: "start",
