@@ -25,7 +25,7 @@ export function Navbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="fixed top-0 w-full bg-inherit z-40">
+      <nav className="fixed top-0 w-full bg-inherit z-40 tablet:py-5 transition-all duration-300">
         <div className="mx-auto px-8 max-w-6xl tablet:px-4">
           <div className="flex flex-wrap justify-between items-center h-16">
             {/* Logo */}
