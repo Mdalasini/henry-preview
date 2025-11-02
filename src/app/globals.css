@@ -8,12 +8,12 @@
     --breakpoint-tablet: 64rem;
     --breakpoint-desktop: 81rem;
 
-    --font-size-hero: clamp(3.5rem, 1.5rem + 5vw, 5.5rem);
-    --font-size-xl: clamp(2.5rem, 1.25rem + 5vw, 3.5rem);
-    --font-size-lg: clamp(1.5rem, 0.75rem + 5vw, 2.5rem);
-    --font-size-base: clamp(1rem, 0.5rem + 5vw, 1.25rem);
-    --font-size-sm: clamp(0.875rem, 0.25rem + 5vw, 1rem);
-    --font-size-xs: clamp(0.75rem, 0.125rem + 5vw, 0.875rem);
+    --text-hero: clamp(2.5rem, 1.25rem + 5vw, 3.5rem);
+    --text-xl: clamp(1.5rem, 0.75rem + 5vw, 2.5rem);
+    --text-lg: clamp(1.125rem, 0.625rem + 5vw, 1.5rem);
+    --text-base: clamp(1rem, 0.5rem + 5vw, 1.25rem);
+    --text-sm: clamp(0.875rem, 0.25rem + 5vw, 1rem);
+    --text-xs: clamp(0.75rem, 0.125rem + 5vw, 0.875rem);
 }
 
 @theme inline {

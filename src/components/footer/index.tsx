@@ -2,15 +2,20 @@ import { Youtube, Instagram, Facebook, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
+import { Lato } from "next/font/google";
+
+const paragraphFont = Lato({ weight: "400", subsets: ["latin"] });
 
 export function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 border-t">
+    <footer
+      className={`fixed left-0 bottom-0 w-full bg-gray-100 border-t ${paragraphFont.className}`}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Newsletter Subscription */}
         <div className="flex justify-start mb-8">
           <div className="w-full md:w-1/2 lg:w-1/3">
-            <h3 className="text-lg font-semibold mb-4">
+            <h3 className="text-base font-semibold mb-4">
               Subscribe to our Newsletter
             </h3>
             <form className="flex flex-col sm:flex-row gap-2">

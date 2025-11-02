@@ -9,6 +9,7 @@ const sans = Noto_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Henry's Portfolio",
   description: "A portfolio website",
+  icons: "/images/awana-logo.svg",
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={sans.className}>
         <Navbar />
-        <main>{children}</main>
+        <main className="mt-16">{children}</main>
         <Footer />
       </body>
     </html>
