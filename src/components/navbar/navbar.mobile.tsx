@@ -36,14 +36,14 @@ export function MobileNavbar() {
             <Link href="/">
               <Image
                 src="/images/awana-logo.svg"
-                alt="Awana Afrika Logo"
+                alt="AWAN Afrika Logo"
                 width={40}
                 height={40}
               />
             </Link>
 
             <Link href="/" className={titleFont.className}>
-              <span className="text-lg font-bold text-white">Awana Afrika</span>
+              <span className="text-lg font-bold text-white">AWAN Afrika</span>
             </Link>
 
             <Button

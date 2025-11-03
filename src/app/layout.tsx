@@ -7,8 +7,9 @@ import "./globals.css";
 const sans = Noto_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Henry's Portfolio",
-  description: "A portfolio website",
+  title: "AWAN Afrika",
+  description:
+    "AWAN Afrika connects women and youth agribusiness owners across the continent, building pathways from farm to market, and ambition to impact.",
   icons: "/images/awana-logo.svg",
 };
 
