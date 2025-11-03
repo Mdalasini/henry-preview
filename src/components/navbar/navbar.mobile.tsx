@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 import { Playfair_Display, Lato } from "next/font/google";
 
 const navItems = [
-  { href: "/about", label: "About" },
+  { href: "/", label: "Home" },
   { href: "/events", label: "Events" },
   { href: "/news-blog", label: "News & Blog" },
   { href: "/press-room", label: "Press Room" },
@@ -31,8 +31,8 @@ export function MobileNavbar() {
   return (
     <>
       <nav className="fixed top-0 w-full bg-inherit z-40">
-        <div className="mx-auto px-6 max-w-6xl bg-stone-800">
-          <div className="flex justify-between items-center py-1">
+        <div className="mx-auto px-4 max-w-6xl bg-stone-800">
+          <div className="flex justify-between items-center h-18">
             <Link href="/">
               <Image
                 src="/images/awana-logo.svg"

@@ -8,9 +8,7 @@ const paragraphFont = Lato({ weight: "400", subsets: ["latin"] });
 
 export function Footer() {
   return (
-    <footer
-      className={`fixed left-0 bottom-0 w-full bg-gray-100 border-t ${paragraphFont.className}`}
-    >
+    <footer className={`bg-gray-100 border-t ${paragraphFont.className}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Newsletter Subscription */}
         <div className="flex justify-start mb-8">

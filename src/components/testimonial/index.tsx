@@ -11,7 +11,7 @@ export function Testimonial({ quote, author, authorRole, imageUrl }: Props) {
   return (
     <figure className="max-w-2xl mx-auto my-12">
       <blockquote>
-        <p className="text-xl italic font-medium text-gray-900">"{quote}"</p>
+        <p className="text-lg italic font-medium text-gray-900">"{quote}"</p>
       </blockquote>
       <figcaption className="flex items-center mt-6 space-x-3">
         <Image
@@ -22,7 +22,9 @@ export function Testimonial({ quote, author, authorRole, imageUrl }: Props) {
           height={48}
         />
         <div className="flex items-center divide-x-2 divide-gray-500">
-          <cite className="pr-3 font-medium text-gray-900">{author}</cite>
+          <cite className="pr-3 text-base font-medium text-gray-900">
+            {author}
+          </cite>
           <cite className="pl-3 text-sm text-gray-500">{authorRole}</cite>
         </div>
       </figcaption>
